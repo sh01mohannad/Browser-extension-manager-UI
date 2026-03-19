@@ -58,13 +58,13 @@ function renderExtensions(data, status = "all") {
                         alt="${element.name}"
                     />
                     <div class="ext-item__content">
-                        <h2 class="ext-item__title">${element.name}</h2>
+                        <h2 class="ext-item__title" id="ext-${index}-title">${element.name}</h2>
                         <p class="ext-item__description">${element.description}</p>
                     </div>
                 </div>
                 <div class="ext-item__body">
-                    <button class="ext-item__btn" onclick="removeExtension(${index})">Remove</button>
-                    <label class="ext-item__switch">
+                    <button class="ext-item__btn" aria-label="Remove ${element.name}" onclick="removeExtension(${index})">Remove</button>
+                    <label class="ext-item__switch" aria-labelledby="ext-${index}-title">
                         <input type="checkbox" ${element.isActive ? "checked" : ""} />
                         <span class="slider"></span>
                     </label>
