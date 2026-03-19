@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Browser extensions manager UI</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <linkف
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <button class="header__theme" id="themeToggle">
+                    <img src="./assets/images/icon-moon.svg" alt="Theme" />
+                </button>
+            </header>
+            <main class="ext">
+                <div class="ext__header">
+                    <h1 class="ext__title">Extensions List</h1>
+                    <div class="ext__actions">
+                        <button class="ext__btn ext__btn--active" id="btnAll">
+                            All
+                        </button>
+                        <button class="ext__btn" id="btnActive">Active</button>
+                        <button class="ext__btn" id="btnInactive">
+                            Inactive
+                        </button>
+                    </div>
+                </div>
+                <div class="ext__body">
+                    <div class="ext__list"></div>
+                </div>
+            </main>
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
